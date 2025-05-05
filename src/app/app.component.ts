@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DchartComponent } from './components/dchart/dchart.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  standalone: true,
+  imports: [DchartComponent],
+  templateUrl: './app.component.html', //  <-- CORRECTED
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'DCharts';
-}
+export class AppComponent {}

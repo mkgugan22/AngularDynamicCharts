@@ -1,0 +1,30 @@
+<!-- 
+<div echarts
+     [options]="lineChart"
+     class="chart"
+     style="height: 400px; width: 100%;">
+</div>
+
+<label for="chartType" style="color: white;">Chart Type:</label>
+<select id="chartType" (change)="changeChart($event)">
+  <option value="line">Line Chart</option>
+  <option value="bar">Bar Chart</option>
+  <option value="pie">Pie Chart</option>
+</select> -->
+
+
+<div style="text-align: center; margin: 20px;">
+  <h2>Top 10 Most Populous Countries</h2>
+
+  <label for="chartType">Select Chart Type: </label>
+  <select id="chartType" (change)="changeChart($event)">
+    <option value="pie">Pie Chart</option>
+    <option value="bar">Bar Chart</option>
+    <option value="line">Line Chart</option>
+    <option value="doughnut">Doughnut</option>
+    <option value="radar">Radar</option>
+    <option value="scatter">Scatter</option>
+  </select>
+</div>
+
+<div echarts [options]="chartOption" class="chart" style="height: 500px;"></div>
